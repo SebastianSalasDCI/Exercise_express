@@ -57,7 +57,16 @@ In this part of the task, you have to create a the main html and a script in Jav
 	These titles can be obtained by using the function `Object.Keys(data[0])` 
  10.  Then we do something similar with the `tbody_content`
 
+
 ## Part 3. Back End
+For the back end, you should create some functions in the `api.js` file that is in the routes folder. 
 
-
+ 1. First create a `router.post()` function to obtain the post data from the form in the html. The url will be `'/post'`. Inside this function get the desired fields and from the form using the `req.body` object.
+ 2. With the information from the form, use the push function from the data base lowdb to save the new data.  more info [lowdb](https://github.com/typicode/lowdb)
+ 3. Finally use `res.redirect('/')` to show again the index page.
+ 4. Now to delete the data from the data base create a different `router.post()` function. Here the url will be `'/delete'`.
+ 5. Inside this function get the id from the post data using the `req.body` object. 
+ 6. now using the remove function from the data base delete the desired item that has the same id as the one obtained. More info on the delete is in [lowdb](https://github.com/typicode/lowdb)
+ 7. Remember that the type of the Id should be the same as in the data base. If in the data base your Ids are integers then you will have to convert first the id obtained by post before using the delete function.
+ 
 > Written with [StackEdit](https://stackedit.io/).
