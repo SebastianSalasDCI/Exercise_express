@@ -9,9 +9,9 @@ The exercise is divided in tasks for a better understanding
 
 ## Part 1 - The server
 
-The first thing to do is create the server. For this we use the command`npx express-generator Table-lowdb --no-view --git`. After that run `npm install` and then `npm install lowdb` to install the data base. Create a folder called data and create a file `data.json` in it. Then follow the next steps.
+The first thing to do is create the server. For this we use the command`npx express-generator Table-lowdb --no-view --git`. **Enter the Table-lowdb folder and** run `npm install` and then `npm install lowdb` to install the data base. Create a folder called data and create a file `data.json` in it. Then follow the next steps.
 
- 1. Create a file call `api.js` inside the routers folder
+ 1. Create a file call `api.js` inside the routes folder
  2. Inside this file import express and define a variable called router for express.router()
  3. Next, lets import the data base and FileSync from `lowdb`.
  4. Next, define a variable called adapter that will be equal to `new FileSync('data/data.json')`
