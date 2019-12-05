@@ -29,7 +29,7 @@ The first thing to do is create the server. For this we use the command`npx expr
  8. The to send this data, use the function `router.get('url',function(req,res,next){}`. This function will get the url from the browser, and if it coincides with the url passed as a parameter, then the function inside will be executed. For the url use `'/'`. using `'/'` means that by default this function will be executed if the browser enters the `/api` route.
  9. Inside this function send the data as json, for this use the function `res.json(data)`.
  10. Finally export the router function 
- 11. **OPEN THE APP.JS FILE** and there import the new `api.json` file. 
+ 11. **OPEN THE APP.JS FILE** and there import the new `api.js` file. 
  12. Then use the function from express `app.use('url',function)` and as url use `'/api'` and as function send the file that you imported in the step 11.
 
 ## Part 2. Front End
@@ -57,10 +57,12 @@ In this part of the task, you have to create a the main html and a script in Jav
 
 	These titles can be obtained by using the function `Object.Keys(data[0])` 
  10.  Then we do something similar with the `tbody_content`. We should create each of the rows 
- 11. hen we do something similar with the `tbody_content`. Use `forEach()` with the data array and then create the each of the rows.
- 12. Now the Delete part depends on how did you decide to implemented. If you used a form in the html is not needed to do more in the Javascript file. If you decided to go by adding the onclick event to the rows in the table, then is needed to create another function in the Javascript file.
- 13. **Only if the you add the onclick events to the rows of the table follow the next steps. if not continue with part 3**
- 14. 
+ 11. Then we do something similar with the `tbody_content`. Use `forEach()` with the data array and then create the each of the rows.
+ 12. Finally send the data to the `<thead>` and `<tbody>` elements, by assigning the `innerHTML` property of these components to the files
+ 13. Call the `obtain_data` at the end of the file so y 
+ 14. Now the Delete part depends on how did you decide to implemented. If you used a form in the html is not needed to do more in the Javascript file. If you decided to go by adding the onclick event to the rows in the table, then is needed to create another function in the Javascript file.
+ 15. **Only if the you add the onclick events to the rows of the table follow the next steps. if not continue with part 3**
+ 15. 
 
 ## Part 3. Back End 
 
