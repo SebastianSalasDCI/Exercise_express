@@ -62,7 +62,7 @@ In this part of the task, you have to create a the main html and a script in Jav
  13. Call the `obtain_data` at the end of the file so y 
  14. Now the Delete part depends on how did you decide to implemented. If you used a form in the html is not needed to do more in the Javascript file. If you decided to go by adding the onclick event to the rows in the table, then is needed to create another function in the Javascript file.
  15. **Only if the you add the onclick events to the rows of the table follow the next steps. if not continue with part 3**
- 15. 
+ 16. 
 
 ## Part 3. Back End 
 
