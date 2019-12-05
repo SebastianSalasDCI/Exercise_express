@@ -45,18 +45,27 @@ In this part of the task, you have to create a the main html and a script in Jav
  8. Now you need to fill this two variables dynamically with the respective content. For example `thead_content` should be something like:
 
 
-		<thead>
 			<tr>
-				<td>Title1</td>
+				<th>Title1</th>
 				.
 				.
 				.
-			</tr>
-		</thead>	
+			</tr>	
 
 	These titles can be obtained by using the function `Object.Keys(data[0])` 
- 10.  Then we do something similar with the `tbody_content`
+ 10.  Then we do something similar with the `tbody_content`. We should create each of the rows 
+ 11. Then we do something similar with the `tbody_content`. Use `forEach()` with the data array and then create the each of the rows.
 
+			<tr>
+				<td>Data1</td>
+				.
+				.
+				.
+			</tr>	
+
+ 12. Now the Delete part depends on how did you decide to implemented. If you used a form in the html is not needed to do more in the Javascript file. If you decided to go by adding the onclick event to the rows in the table, then is needed to create another function in the Javascript file.
+ 13. **Only if the you add the onclick events to the rows of the table follow the next steps. if not continue with part 3**
+ 14. 
 
 ## Part 3. Back End
 For the back end, you should create some functions in the `api.js` file that is in the routes folder. 
