@@ -67,4 +67,6 @@ function delete_data(id){
     obtain_data()
 }
 
+
+
 obtain_data()

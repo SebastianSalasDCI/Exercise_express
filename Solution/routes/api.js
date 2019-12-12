@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 router.post('/post', function(req, res, next) {
     let id = parseInt(req.body.id);
     let name = req.body.name
-
+    console.log(id)
     db.get('list').push({
         id:id,
         name:name
